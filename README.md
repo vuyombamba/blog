@@ -1,4 +1,3 @@
-# blog
-
-As you can see this is way way too ugly so please help and share yur thoughts on how i can tackle this website.
-by the way its a blog
+# Personal Blog
+Simple personal blog, still under-contruction.
+the blog is written in HTML and CSS so far

@@ -42,16 +42,37 @@ body {
         text-align: center;
         font-weight: 300;
         color: rgb(141, 141, 141);
-        
+    }
+    section.post, div a {
+        color: black;
     }
     section.post {
-        background-color: #f8f1f1e8;
-        color: black;
-        margin: 50px;
-        padding: 5em;
+        padding: 3em;
     }
-    section.
+    .recent_post, .oldest_post div{
+        background: rgb(207, 207, 207);
+        border-radius: 20px;
+        padding: 2em;;
+    }
+    .oldest_post {
+        display: flex;
+        margin: 20px;
+    }
+    .oldest_post div {
+        flex-direction: row;
+        width: 37%;
+        margin: auto;
+    }
+    
     footer {
         background: grey;
         padding: 2em;
+    }
+    .oldest_post div:hover {
+       background: orangered;
+       color: whitesmoke;
+    }
+    .recent_post h2, .oldest_post h2 {
+        text-align: center;
+        text-transform: capitalize;
     }
