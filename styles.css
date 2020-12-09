@@ -48,7 +48,7 @@ header p{
 header .mobile {
     display: none;
 }
-@media screen and (max-width: 700px){
+@media only screen and (max-width: 400px) {
    .desktop {
         display: none;
     }
@@ -87,17 +87,14 @@ section.oldest_post {
     text-transform: capitalize;
 
 }
-@media screen and (max-width: 200px) {
+@media only screen and (max-width: 200px) {
     section.recent_post {
         margin: 10px;
         font-size: x-large;
-        height: 400px; 
+        height: 200px; 
     }
     section.oldest_post {
-        margin: 156px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        margin: 50px;
     }
     
 }
