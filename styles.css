@@ -1,106 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-body, nav ul, nav ul li {
+body {
+    background-image: url(img/star-bg.svg);
+    background-color: #141316;
+    background-repeat: repeat-x;
+    color: whitesmoke;
     margin: 0;
     padding: 0;
 }
-
-body {
-    background-image: url(/img/star-bg.svg),linear-gradient(#191c20, #24292e 15%);
-    background-repeat: repeat-x;
-    background-position: center 0, 0 0, 0 0;
-    background-color: #24292e;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Patrick Hand', helvetica neue, helvetica, Arial, sans-serif;
-}
-h1{
-    font-size: 70px;
-    font-family: 'Patrick hand',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 300;
-    text-transform: capitalize;
-    text-align: center;
-    }
-nav {
-    margin: 40px;
-}
- nav ul, header p, .recent_post h2{
-     list-style: none;
-     text-align: center;   
- }
- nav ul li {
-    display: inline-block;
-    padding-right: 20px;
-    font-size: 30px;
-}
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-/*HEADER*/
-section.insider{
-    padding: 13rem 0;
-}
-header p{
-        font-size: x-large;
-        text-align: center;
-        color: rgb(141, 141, 141);
-}
-header .mobile {
-    display: none;
-}
-@media only screen and (max-width: 400px) {
-   .desktop {
-        display: none;
-    }
-}
-
-/*POST*/
-section.recent_post {
-    margin: 160px;
-    font-size: x-large;
-    height: 400px; 
-}
-section.oldest_post {
-    margin: 156px;
+header nav ul {
     display: flex;
+    list-style: none;    
+    justify-content: center;
+}
+header nav ul li {
     flex-direction: row;
-    flex-wrap: wrap;
 }
-.recent_post, .oldest_post div{
-    background: white;
-    color: black;
-    border-radius: 30px;
-    padding: 2em;
-}  
-.oldest_post div {
-    box-shadow: black 10px 10px 20px;
-    margin: auto;
-    width: 300px;
+header > nav > ul > li {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
 }
-.oldest_post div:hover {
-    background: orangered;
-    color: whitesmoke; 
+header ul li a {
+    text-decoration: none;
+    color: #8a8a8a;
+    transition: 0.5s;
 }
-
-.recent_post h2, .oldest_post h2 {
-    text-align: center;
+header ul li a:hover {
+    border-bottom: 1px solid #8a8a8a;
+}
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;  
+    height: 1vh;
+}
+.header-wrapper-title {
+    font-weight: 600;
     text-transform: capitalize;
-
-}
-@media only screen and (max-width: 200px) {
-    section.recent_post {
-        margin: 10px;
-        font-size: x-large;
-        height: 200px; 
-    }
-    section.oldest_post {
-        margin: 50px;
-    }
-    
-}
-
-footer {
-    background: rgb(0, 0, 0);
-    padding: 2em;
-    text-align: center;
 }
